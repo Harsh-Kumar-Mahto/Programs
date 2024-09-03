@@ -1,0 +1,22 @@
+import java.awt.*;
+import java.applet.*;
+import java.awt.event.*;
+public class MyApplet extends Applet implements MouseListener
+{int x=0,y=0;
+    public void init()
+    {Syso("Applet Initialized..");
+     addMouseListener(this);
+    }
+    public void paint(Graphics g)
+    {g.drawString("Hello Java!!",x,y);
+    }
+    public void mouseClicked(mouseEvent me)
+    {x=me.getX();
+     y=me.getY();
+     Syso("X: "+x+"Y:"+y);
+    }
+    public void mouseExited(MouseEvent me){}
+    public void mouseEntered(MouseEvent me){}
+    public void mouseReleased(MouseEvent me){}
+    public void mousePressed(MouseEvent me){}
+}

@@ -1,0 +1,1 @@
+// Consider notes and a question explaination in video 21.3
